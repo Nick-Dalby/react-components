@@ -1,0 +1,49 @@
+section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 0 2.5rem;
+  padding: 0 0 1.5rem 0;
+}
+
+section h3 {
+  cursor: pointer;
+  user-select: none;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+section div.info {
+  display: none;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin: 1rem 0 0 0;
+  max-width: 40em;
+}
+
+section div.hr {
+  margin: 2rem 0;
+  width: content;
+  height: 0.01rem;
+  background-color: var(--light);
+}
+
+section.opened div.info {
+  display: block;
+}
+
+section div.status {
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border-radius: 50%;
+  border: 3px solid var(--light);
+  margin-top: 0.7rem;
+  transition: 300ms;
+}
+
+section.opened div.status {
+  background: var(--light);
+}

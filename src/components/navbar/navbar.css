@@ -1,0 +1,48 @@
+.navbar {
+  position: absolute;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  padding: 1rem 1.5rem;
+  border-bottom: 0.1rem solid var(--light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dark);
+}
+
+.navbar h1 {
+  font-size: 3rem;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.navbar a {
+  transition: transform 250ms;
+}
+
+.navbar a:hover {
+  border-bottom: none;
+  display: inline-block;
+  color: var(--light-hover);
+}
+
+.navbar p {
+  font-size: 3rem;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  gap: 1rem;
+}
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
