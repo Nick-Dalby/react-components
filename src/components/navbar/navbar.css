@@ -18,11 +18,12 @@
 }
 
 .navbar a {
+  border-bottom: 0.15rem solid transparent;
   transition: transform 250ms;
 }
 
 .navbar a:hover {
-  border-bottom: none;
+  border-bottom: 0.15rem solid transparent;
   display: inline-block;
   color: var(--light-hover);
 }

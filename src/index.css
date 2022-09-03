@@ -5,6 +5,7 @@
 
   --light: hsl(60, 17%, 85%);
   --light-hover: hsl(0, 0%, 76%);
+  --dark-hover: hsl(0, 0%, 54%);
   --dark: hsl(0, 0%, 14%);
 
   font-family: 'Inter', sans-serif;
@@ -12,7 +13,7 @@
   line-height: 24px;
   font-weight: 400;
 
-  color-scheme: light dark;
+  /* color-scheme: light dark; */
   color: var(--light);
   background-color: var(--dark);
 
@@ -23,7 +24,9 @@
   -webkit-text-size-adjust: 100%;
 }
 
-* {
+*,
+*:before,
+*:after {
   margin: 0;
   box-sizing: border-box;
 }
@@ -41,10 +44,19 @@ body {
 a {
   text-decoration: none;
   color: var(--light);
+  border-bottom: 0.15rem solid transparent;
+  width: fit-content;
 }
 
 a:hover {
+  display: block;
   border-bottom: 0.15rem solid var(--light);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
 
 /* @media (prefers-color-scheme: light) {
