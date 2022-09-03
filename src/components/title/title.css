@@ -3,14 +3,13 @@
 }
 
 .line {
-  width: content;
   height: 0.4rem;
   background-color: var(--light);
   margin: 0.4rem 0 2rem 0;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: calc(2.5rem + 0.5vw);
   line-height: 1.1;
   margin: 0 auto;
 }

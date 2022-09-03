@@ -32,13 +32,12 @@
 }
 
 body {
-  min-width: 320px;
   font-size: 1.25rem;
 }
 
 .App {
   width: clamp(16rem, 80vw, 70rem);
-  margin: 18vh auto;
+  margin: 15vh auto;
 }
 
 a {
