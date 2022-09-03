@@ -47,9 +47,9 @@ a:hover {
   border-bottom: 0.15rem solid var(--light);
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     color: var(--dark);
     background-color: var(--light);
   }
-}
+} */
