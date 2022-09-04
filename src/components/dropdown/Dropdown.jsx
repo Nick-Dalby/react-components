@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import './dropdown.css'
+import styles from './dropdown.module.css'
 import { HiArrowCircleDown } from 'react-icons/hi'
 
 
@@ -28,7 +28,7 @@ const Dropdown = ({ options, selected, onSelectedChange, label }) => {
 
     return (
       <div
-        className="item"
+        className={styles.item}
         key={option.value}
         onClick={() => onSelectedChange(option)}
       >
@@ -40,17 +40,17 @@ const Dropdown = ({ options, selected, onSelectedChange, label }) => {
   return (
     <div ref={ref}>
       <div>
-        <label className="label">{label}</label>
+        <label className={styles.label}>{label}</label>
         <div
           onClick={() => setOpen(!open)}
-          className={`dropdown ${open ? 'visible active' : ''}`}
+          className={`${styles.dropdown} ${open ? `${styles.visible} ${styles.active}` : ''}`}
         >
-          <div className="choose">
+          <div className={styles.choose}>
 
-          <div className="text">{selected.label}</div>
-          <HiArrowCircleDown className='down-arrow'/>
+          <div className={styles.text}>{selected.label}</div>
+          <HiArrowCircleDown className={styles.downArrow}/>
           </div>
-          <div className={`menu ${open ? 'visible' : ''}`}>
+          <div className={`${styles.menu} ${open ? styles.visible : ''}`}>
             {renderedOptions}
           </div>
         </div>
