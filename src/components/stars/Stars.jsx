@@ -9,7 +9,7 @@ const Stars = () => {
   const starIcons = Array.from({ length: 5 }, (_, index) => {
   const number = index + 0.5
   return <span key={index}>
-  {stars >= index + 1 ? <BsStarFill /> : stars >= number ? <BsStarHalf /> : <BsStar />}
+  {stars >= index + 1 ? <BsStarFill className="star"/> : stars >= number ? <BsStarHalf className="star"/> : <BsStar className="star"/>}
     </span>
 })
   

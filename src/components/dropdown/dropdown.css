@@ -1,0 +1,48 @@
+.item {
+  opacity: 0.5;
+  padding: 0.8rem;
+  border-top: 1px solid var(--light-hover);
+}
+.item:hover {
+  background-color: var(--light-hover);
+  color: var(--dark);
+}
+
+.dropdown {
+  margin: 1rem 0;
+  border: 2px solid var(--light);
+  border-radius: 0.4rem;
+}
+
+.menu {
+  display: none;
+}
+
+.visible {
+  display: block;
+  
+}
+
+.dropdown.active {
+  outline: 3px solid rgb(255, 199, 33);
+  outline-offset: 2px;
+}
+
+.text, .down-arrow, .item {
+  font-size: 2rem;
+}
+
+.text {
+
+}
+
+.choose {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+}
+
+.label {
+  font-size: 1.5rem;
+}

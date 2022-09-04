@@ -13,19 +13,24 @@
 
 .navbar h1 {
   font-size: 2.8rem;
-  margin: 0;
+  margin: 0 1rem 0 0;
   line-height: 1.1;
-}
-
-.navbar a {
-  border-bottom: 0.15rem solid transparent;
-  transition: transform 250ms;
 }
 
 .navbar a:hover {
   border-bottom: 0.15rem solid transparent;
-  display: inline-block;
-  color: var(--light-hover);
+}
+
+li a {
+  display: block;
+}
+
+.navbar li a:hover {
+  border-bottom: 0.15rem solid var(--light);
+}
+
+.navbar nav ul li a.active {
+  border-bottom: 0.15rem solid var(--light);
 }
 
 .navbar p {
@@ -45,8 +50,9 @@ nav ul {
 nav li {
   list-style: none;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
+
 
 @media screen and (max-width: 640px) {
   nav {

@@ -51,7 +51,7 @@ button:active {
   left: 5px;
 }
 
-svg {
+.star {
   font-size: 4rem;
   stroke: rgb(255, 199, 33);
   fill: rgb(255, 199, 33);

@@ -1,14 +1,15 @@
-import Title from "../components/title/Title"
-import { Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
+import Title from '../components/title/Title'
 
 const Home = () => {
   return (
     <>
-    <Title title={'List'} />
-    <div className="list">
-    <Link to='/accordion'>Accordion</Link>
-    <Link to='/stars'>Stars</Link>
-    </div>
+      <Title title={'Home'} />
+      <div className="list">
+        <Link to="/accordion">Accordion</Link>
+        <Link to="/stars">Stars</Link>
+        <Link to="/dropdown">Dropdown</Link>
+      </div>
     </>
   )
 }
