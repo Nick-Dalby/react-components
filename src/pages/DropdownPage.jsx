@@ -20,7 +20,6 @@ const options = [
 export const DropdownPage = () => {
   const [selected, setSelected] = useState(options[0])
 
-  console.log(selected);
   return (
     <>
     <Title title={'Dropdown'} />
