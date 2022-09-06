@@ -6,6 +6,7 @@ import StarsPage from './pages/StarsPage'
 import SomePage from './pages/SomePage'
 import AnotherPage from './pages/AnotherPage'
 import DropdownPage from './pages/DropdownPage'
+import ProductImagesPage from './pages/ProductImagesPage'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/accordion' element={<AccordionPage />} />
         <Route path='/stars' element={<StarsPage />} />
         <Route path='/dropdown' element={<DropdownPage />} />
+        <Route path='/product-images' element={<ProductImagesPage />} />
         <Route path='/some-page' element={<SomePage />} />
         <Route path='/another-page' element={<AnotherPage />} />
       </Routes>

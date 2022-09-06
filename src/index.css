@@ -64,3 +64,16 @@ a:hover {
     background-color: var(--light);
   }
 } */
+
+
+/* fot the image gallery component */
+section {
+  display: block;
+  width: 60%;
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    width: 100%;
+  }
+}
