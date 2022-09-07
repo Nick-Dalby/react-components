@@ -7,6 +7,9 @@ import SomePage from './pages/SomePage'
 import AnotherPage from './pages/AnotherPage'
 import DropdownPage from './pages/DropdownPage'
 import ProductImagesPage from './pages/ProductImagesPage'
+import PaginationHooks from './components/pagination/PaginationHooks'
+import PaginationQuery from './components/pagination/PaginationQuery'
+import PaginationPage from './pages/PaginationPage'
 
 function App() {
   return (
@@ -17,6 +20,10 @@ function App() {
         <Route path='/accordion' element={<AccordionPage />} />
         <Route path='/stars' element={<StarsPage />} />
         <Route path='/dropdown' element={<DropdownPage />} />
+
+        <Route path='/pagination' element={<PaginationPage />} />
+        <Route path='/pagination-hooks' element={<PaginationHooks />} />
+        <Route path='/pagination-query' element={<PaginationQuery />} />
         <Route path='/product-images' element={<ProductImagesPage />} />
         <Route path='/some-page' element={<SomePage />} />
         <Route path='/another-page' element={<AnotherPage />} />

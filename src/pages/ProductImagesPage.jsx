@@ -1,4 +1,3 @@
-import styled from 'styled-components'
 import ProductImages from '../components/product-images/ProductImages'
 import Title from '../components/title/Title'
 
