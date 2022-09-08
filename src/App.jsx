@@ -10,6 +10,7 @@ import ProductImagesPage from './pages/ProductImagesPage'
 import PaginationHooks from './components/pagination/PaginationHooks'
 import PaginationQuery from './components/pagination/PaginationQuery'
 import PaginationPage from './pages/PaginationPage'
+import CarouselsPage from './pages/CarouselsPage'
 
 function App() {
   return (
@@ -20,7 +21,7 @@ function App() {
         <Route path='/accordion' element={<AccordionPage />} />
         <Route path='/stars' element={<StarsPage />} />
         <Route path='/dropdown' element={<DropdownPage />} />
-
+        <Route path='/carousels' element={<CarouselsPage />} />
         <Route path='/pagination' element={<PaginationPage />} />
         <Route path='/pagination-hooks' element={<PaginationHooks />} />
         <Route path='/pagination-query' element={<PaginationQuery />} />

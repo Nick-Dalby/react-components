@@ -11,6 +11,7 @@ const Home = () => {
         <Link to="/dropdown">Dropdown</Link>
         <Link to="/product-images">Product Image Gallery</Link>
         <Link to="/pagination">Pagination</Link>
+        <Link to="/carousels">Carousels</Link>
 
       </div>
     </>
